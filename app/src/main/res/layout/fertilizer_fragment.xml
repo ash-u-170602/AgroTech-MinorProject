@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newprediction">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+
+        android:columnCount="2"
+        android:rowCount="3">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginTop="140dp"
+                android:layout_marginLeft="50dp"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:text="Nitrogen (N)"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/btnnitrogen"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:hint="Enter the Value (exapmle:50)"
+                    android:gravity="center"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="Phosphorous (P)"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/btnphosp"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle_shape"
+                    android:hint="Enter the Value (exapmle:50)"
+                    android:inputType="number" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="Pottasium (k)"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/btnpottasium"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle_shape"
+                    android:hint="Enter the Value (exapmle:50)"
+                    android:inputType="number" />
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="Select Crop"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_indian_state"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+
+                    android:background="@drawable/rectangle_shape" />
+
+
+
+                <Button
+                    android:id="@+id/predict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#3ECF27"
+                    android:text="Let's Predict" />
+
+
+            </LinearLayout>
+
+
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>

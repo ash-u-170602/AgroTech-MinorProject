@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_after"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.krishicare.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diseaseDetectionFragment"
+            app:destination="@id/diseaseDetectionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fertilizerFragment2"
+            app:destination="@id/fertilizerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatBotFragment"
+            app:destination="@id/chatBotFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_agroBlogFragment"
+            app:destination="@id/agroBlogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.KrishiCare.ui.fragment.SecondFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/second_fragment">
+        <action
+            android:id="@+id/action_secondFragment_to_cropResult3"
+            app:destination="@id/cropResult3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.krishicare.ui.fragment.WeatherFragment"
+        android:label="WeatherFragment"
+        tools:layout="@layout/weather_fragment"/>
+    <fragment
+        android:id="@+id/diseaseDetectionFragment"
+        android:name="com.example.krishicare.ui.fragment.DiseaseDetectionFragment"
+        android:label="DiseaseDetectionFragment"
+        tools:layout="@layout/disease_detection_fragment"/>
+    <fragment
+        android:id="@+id/cropResult3"
+        android:name="com.example.krishicare.ui.fragment.CropResult"
+        android:label="CropResult"
+        tools:layout="@layout/crop_prediction_result_fragment"/>
+
+    <fragment
+        android:id="@+id/fertilizerFragment"
+        android:name="com.example.krishicare.ui.fragment.FertilizerFragment"
+        android:label="FertilizerFragment"
+        tools:layout="@layout/fertilizer_fragment">
+        <action
+            android:id="@+id/action_fertilizerFragment_to_fertilizerResult"
+            app:destination="@id/fertilizerResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/fertilizerResult"
+        android:name="com.example.krishicare.ui.fragment.FertilizerResult"
+        android:label="FertilizerResult"
+        tools:layout="@layout/fertilizer_result_fragment"/>
+    <fragment
+        android:id="@+id/chatBotFragment"
+        android:name="com.example.krishicare.ui.fragment.ChatBotFragment"
+        android:label="ChatBotFragment"
+        tools:layout="@layout/chat_bot_fragment"/>
+    <fragment
+        android:id="@+id/agroBlogFragment"
+        android:name="com.example.krishicare.ui.fragment.AgroBlogFragment"
+        android:label="AgroBlogFragment"
+        tools:layout="@layout/agro_blog_fragment"/>
+
+</navigation>
